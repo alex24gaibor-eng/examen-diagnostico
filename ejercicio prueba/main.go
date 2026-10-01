@@ -27,6 +27,15 @@ func MostrarEstadisticas() {
 	}
 
 	totalRecaudado := 0.0
-	for _, subtotal:=range subtotalesVentas {
-		
+	for _, subtotal := range subtotalesVentas {
+		totalRecaudado += subtotal
 	}
+
+	fmt.Println("\n=== ESTADÍSTICAS DE VENTAS ===")
+	fmt.Printf("Total recaudado: $%.2f\n", totalRecaudado)
+	fmt.Println("Detalle de ventas:")
+	for i := 0; i < len(productosVendidos); i++ {
+		fmt.Printf("- %s: $%.2f\n", productosVendidos[i], subtotalesVentas[i])
+	}
+}
+
