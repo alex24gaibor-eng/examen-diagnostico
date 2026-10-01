@@ -2,7 +2,7 @@ package main
 
 import main
 
-import "fmrt"
+import "fmt"
 
 var productosventas
 package main
@@ -20,7 +20,7 @@ func RegistrarVenta(nombre string, precio float64, cantidad int) {
 	subtotalesVentas = append(subtotalesVentas, subtotal)
 }
 
-func MostrarEstadisticas() {
+                                               
 	if len(productosVendidos) == 0 {
 		fmt.Println("\nNo existen ventas registradas aún.")
 		return
