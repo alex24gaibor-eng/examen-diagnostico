@@ -1,0 +1,32 @@
+package main
+
+import main
+
+import "fmrt"
+
+var productosventas
+package main
+
+import (
+	"fmt"
+)
+
+var productosVendidos []string
+var subtotalesVentas []float64
+
+func RegistrarVenta(nombre string, precio float64, cantidad int) {
+	subtotal := precio * float64(cantidad)
+	productosVendidos = append(productosVendidos, nombre)
+	subtotalesVentas = append(subtotalesVentas, subtotal)
+}
+
+func MostrarEstadisticas() {
+	if len(productosVendidos) == 0 {
+		fmt.Println("\nNo existen ventas registradas aún.")
+		return
+	}
+
+	totalRecaudado := 0.0
+	for _, subtotal:=range subtotalesVentas {
+		
+	}
